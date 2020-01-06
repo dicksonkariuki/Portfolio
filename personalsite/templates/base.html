@@ -1,4 +1,4 @@
-{% load static%}
+{% load static %}
 <!DOCTYPE>
 <html>
 	<head>
@@ -20,8 +20,7 @@
 		<nav>
 		<!--nav-current main-nav-->
 			<li id="home-nav" class="{% if classhome %}{{classhome}}{% else %}main-nav{% endif %}"><a href="{% url 'index' %}">HOME</a> /</li>
-			<li class="{% if classprojects %}{{classprojects}}{% else %}main-nav{% endif %}" id="projects-nav"><a href="{% url 'projects' %}">PROJECTS</a> /</li>
-			{# <li class="{% if classcontact %}{{classcontact}}{% else %}main-nav{% endif %}" id="contact-nav"><a href="{% url 'contact' %}">CONTACT</a></li> #}
+			
 		</nav>
 		
 		{% block content %}
