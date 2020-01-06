@@ -12,3 +12,7 @@ def index(request):
 def projects(request):
     context={'classprojects':"nav-current"}
     return render(request,"templates/projects.html",context)
+
+def contacts(request):
+    context={'classcontact':"nav-current"}
+    return render(request,'templates/contacts.html')
