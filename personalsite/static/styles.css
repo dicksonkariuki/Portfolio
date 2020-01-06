@@ -1,0 +1,362 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body {
+	height: 100%;
+	text-align: center;
+	background-image: url("images/1.jpg");
+	color: white;
+	font-family: Ubuntu;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+	font-family: Ubuntu;
+}
+
+p {
+	margin: 5px;
+}
+
+h2,h3, h4 {
+	font-family: Coming Soon;
+	margin-bottom: 10px;
+	font-size: 1.7em;
+}
+
+nav {
+	text-align: right;
+	padding: 1%;
+	margin-right: 5%;
+	margin-bottom: 3%;
+}
+
+.main-nav {
+	display: inline;
+}
+
+.main-nav a {
+	text-decoration: none;
+	color: white;
+	font-family: Averia Sans Libre;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.nav-current a {
+	text-decoration: underline;
+	color: white;
+	font-family: Kranky;
+	font-weight: bold;
+}
+
+.nav-current {
+	display: inline;
+}
+
+#container {min-height: 100%;}
+
+#index-wrapper {
+	padding:1%;
+}
+
+#toTop a{
+	text-decoration: none;
+	color: #ffff00;
+}
+
+#toTop {
+	text-align: right;
+	position:fixed;
+	background: none;
+	bottom: 0;
+	right: 0;
+	background-color: black;
+	opacity: 0.9;
+	padding:10px;
+	border: 1px solid #ffff00;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#index-message, #header-message, .message{
+	background-color: #03080B;
+	opacity: 0.9;
+	width:40%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 8px;
+	color: white;
+}
+
+#index-message{
+	padding:8%;
+}
+
+.row {
+	margin-bottom: 15px;
+}
+
+.msg-row {
+	margin-bottom: 25px;
+	margin-top: 35px;
+}
+
+.resume-h3, .index-em, .like-em {
+	font-family: Gloria Hallelujah;
+	font-size: 1.4em;
+	color: #99ff00;
+}
+
+.resume-em {
+	color: #99ff00;
+}
+
+.index-em{
+	color: #ff9900;
+}
+
+.about-em{
+	color: #ff9900;
+	font-family: Coming Soon;
+	font-weight: bold;
+}
+
+.like-em{
+	color: #33ffcc;
+}
+
+.message, #header-message{
+	margin-bottom: 15px;
+	padding: 2.5%;
+}
+
+#header-message, #index-header{
+	font-family: Cabin Sketch;
+}
+
+.header-contact{
+	color: #33ffcc;
+	font-size: 1.3em;
+}
+
+.a-email{
+	color: #33ffcc;
+	text-decoration: none;
+	font-family: Averia Sans Libre;
+	font-size: 1.2em;
+}
+
+.lang-header {
+	color: #3399ff;
+	font-family: Ubuntu;
+}
+
+#contact-p{
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+#copy {
+	font-size: 70%;
+	text-align: center;
+	background-color:#03080B;
+	opacity: 0.8;
+	padding: 5px;
+	width:45%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.resume-ul{
+    text-align: left;
+    margin-left: 100px;
+}
+
+#resume-centre{
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+.projects-header a{
+	color: white;
+	margin-bottom: 15px;
+	font-family: Coming Soon;
+}
+
+.projects-header a:visited {
+	color: #7c47ad;
+}
+
+dt { 
+	float: left; 
+	padding: 4px; 
+	color: black;
+}
+
+.bar {
+	margin-bottom: 10px;
+	color: black;
+	padding: 4px;
+	text-align: center;
+	background-color: #99ff00;
+}
+
+.align-left {
+	text-align: left;
+	margin-left: 110px;
+}
+
+.resume-ul-1 {
+	margin-left: 70px;
+}
+
+.img-hover {
+	-webkit-transition: all 0.30s ease-in-out;
+  	-moz-transition: all 0.30s ease-in-out;
+  	-ms-transition: all 0.30s ease-in-out;
+  	-o-transition: all 0.30s ease-in-out;
+  	outline: none;
+}
+
+.img-hover:hover {
+  box-shadow: 0 0 5px white;
+}
+
+.not-found {
+	color: #ff4300;
+	font-family: Coming Soon;
+	font-weight: bold;
+}
+
+.error-sm {
+	font-size: 0.9em;
+}
+
+.error-lg {
+	font-size: 1.4em;
+}
+
+
+#data1 {width: 85%;}
+#data2 {width: 80%;}
+#data3 {width: 75%;}
+#data4 {width: 70%;}
+#data5 {width: 70%;}
+#data6 {width: 70%;}
+#data7 {width: 85%;}
+#data8 {width: 85%;}
+#data9 {width: 70%;}
+#data10 {width: 70%;}
+#data11 {width: 65%;}
+#data12 {width: 80%;}
+#data13 {width: 75%;}
+#data14 {width: 70%;}
+/*animation for bars on the resume page*/
+@keyframes data1-anim {
+  from {width: 38%;}
+  to {width: 85%;}
+}
+#data1 {
+	animation: 2s ease-out 0s 1 data1-anim;
+}
+
+@keyframes data2-anim {
+  from {width: 42%;}
+  to {width: 80%;}
+}
+#data2 {
+	animation: 2s ease-out 0s 1 data2-anim;
+}
+
+@keyframes data3-anim {
+  from {width: 30%;}
+  to {width: 75%;}
+}
+#data3 {
+	animation: 2s ease-out 0s 1 data3-anim;
+}
+
+@keyframes data4-anim {
+  from {width: 25%;}
+  to {width: 70%;}
+}
+#data4 {
+	animation: 2s ease-out 0s 1 data4-anim;
+}
+
+@keyframes data5-anim {
+  from {width: 25%;}
+  to {width: 70%;}
+}
+#data5 {
+	animation: 2s ease-out 0s 1 data5-anim;
+}
+
+@keyframes data6-anim {
+  from {width: 25%;}
+  to {width: 70%;}
+}
+#data6 {
+	animation: 2s ease-out 0s 1 data6-anim;
+}
+
+@keyframes data7-anim {
+  from {width: 57%;}
+  to {width: 85%;}
+}
+#data7 {
+	animation: 2s ease-out 0s 1 data7-anim;
+}
+
+@keyframes data8-anim {
+  from {width: 25%;}
+  to {width: 85%;}
+}
+#data8 {
+	animation: 2s ease-out 0s 1 data8-anim;
+}
+
+@keyframes data9-anim {
+  from {width: 55%;}
+  to {width: 70%;}
+}
+#data9 {
+	animation: 2s ease-out 0s 1 data9-anim;
+}
+
+@keyframes data10-anim {
+  from {width: 64%;}
+  to {width: 70%;}
+}
+#data10 {
+	animation: 2s ease-out 0s 1 data10-anim;
+}
+
+@keyframes data12-anim {
+  from {width: 43%;}
+  to {width: 80%;}
+}
+#data12 {
+	animation: 2s ease-out 0s 1 data12-anim;
+}
+
+@keyframes data13-anim {
+  from {width: 72%;}
+  to {width: 75%;}
+}
+#data13 {
+	animation: 2s ease-out 0s 1 data13-anim;
+}
+
+@keyframes data14-anim {
+  from {width: 27%;}
+  to {width: 70%;}
+}
+#data14 {
+	animation: 2s ease-out 0s 1 data14-anim;
+}
