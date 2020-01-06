@@ -15,4 +15,4 @@ def projects(request):
 
 def contacts(request):
     context={'classcontact':"nav-current"}
-    return render(request,'templates/contacts.html')
+    return render(request,'contacts.html',context)
