@@ -1,0 +1,35 @@
+{% load static%}
+<!DOCTYPE>
+<html>
+	<head>
+		<link href="{% static 'portfolio/styles.css' %}" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="{% static 'portfolio/scripts.js' %}"></script>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Kranky" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Averia Sans Libre" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cabin Sketch" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gloria Hallelujah" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Coming Soon" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>{% block name %}{% endblock %}</title>
+	</head>
+	
+	<body>
+	<div id="content">
+		<nav>
+		<!--nav-current main-nav-->
+			<li id="home-nav" class="{% if classhome %}{{classhome}}{% else %}main-nav{% endif %}"><a href="{% url 'index' %}">HOME</a> /</li>
+			<li class="{% if classprojects %}{{classprojects}}{% else %}main-nav{% endif %}" id="projects-nav"><a href="{% url 'projects' %}">PROJECTS</a> /</li>
+			<li class="{% if classresume %}{{classresume}}{% else %}main-nav{% endif %}" id="resume-nav"><a href="{% url 'resume' %}">RESUME</a> /</li>
+			<li class="{% if classabout %}{{classabout}}{% else %}main-nav{% endif %}" id="about-nav"><a href="{% url 'about' %}">ABOUT</a></li>
+			{# <li class="{% if classcontact %}{{classcontact}}{% else %}main-nav{% endif %}" id="contact-nav"><a href="{% url 'contact' %}">CONTACT</a></li> #}
+		</nav>
+		
+		{% block content %}
+        {% endblock %}
+
+		<footer id="copy">Dickson Kariuki &copy; 2020</footer>
+	</div>	
+	</body>
+</html>
